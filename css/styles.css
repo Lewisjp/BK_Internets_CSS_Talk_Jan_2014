@@ -1,0 +1,223 @@
+/*#########GENERAL##########*/
+
+body {
+	background-color: #c4c4c4;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 120%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+
+a:link {
+  color:#666666;
+  text-decoration:none;
+}    
+a:visited {color:#999;} 
+a:hover {color:#999;}  
+a:active {color:#999;} 
+
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	  -moz-box-sizing: border-box; 
+	  -webkit-box-sizing: border-box; 
+	  box-sizing: border-box;
+ }
+
+/*########VARIOUS DIVS#########*/
+
+.container {
+	
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-top: 0px;
+	padding: 10px;
+	font-family: 'Seymour One', sans-serif;
+	font-size: 300%;
+	
+}
+
+.row {
+
+}
+
+.row_learn {
+  position: absolute;
+  right: auto
+  left: auto;
+}
+
+.learn_css {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.learn_box_o
+{
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+
+.learn_box_x
+{
+  float: right;
+  display: inline-block;
+  position: relative;
+}
+
+/*##########THE BOX##########*/
+
+.box {
+	display: inline-block;
+	margin: .5% auto;
+	position: relative;
+	width: 14%;
+	height: 25%;
+
+	border-radius: 10%;
+	background-color: #00b060;
+	box-shadow: 2px 4px 2px .5px 0 #00733e;
+
+}
+
+
+/*#########THE CIRCLE###########*/
+
+.circle {
+	
+	border-radius: 50%;
+	border: 70px solid #e20048;
+	position: relative;
+	top: 7%;
+	left: 7%;
+	width: 85%;
+	height: 85%;
+	box-shadow: 0px 0px 3px 3px #e20048, 3px 3px 6px 6px #93002f;
+}
+
+.inner-circle {
+	
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 0px 3px 0px #00b060,  3px 3px 6px 6px #93002f;
+}
+
+
+
+/*##########THE X##########*/
+
+
+.an_x1, 
+.an_x1top,
+.an_x2
+{
+    background: #8f00ff;
+    position: absolute;
+}
+
+.an_x1 {
+    height: 100%;
+	left: 40%;
+    top: 0%;
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    width: 18%;
+    box-shadow: 0px 0px 3px 3px #7703d1, 6px 0px 6px 6px #5c00a4;
+}
+
+.an_x2 {
+    height: 100%;
+	left: 40%;
+    top: 0%;
+    -o-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    width: 18%;
+    box-shadow: 0px 0px 3px 3px #7703d1, 0px 6px 6px 6px #5c00a4;
+}
+
+
+.an_x1top {
+    height: 100%;
+	left: 40%;
+    top: 0%;
+    -o-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+    width: 20%;
+
+}
+
+
+/*##########Animation of our shapes##########*/
+
+
+
+/* opacity 0 (invisible) to opacity 1 (solid) */
+@-webkit-keyframes FadeInPlease { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes FadeInPlease { from { opacity:0; } to { opacity:1; } }
+@keyframes FadeInPlease { from { opacity:0; } to { opacity:1; } }
+ 
+.fade_layer {
+    opacity:0;  
+    -webkit-animation:FadeInPlease ease-in 1;  
+    -moz-animation:FadeInPlease ease-in 1;
+    animation:FadeInPlease ease-in 1;
+  
+/*this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode:forwards;   
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade_layer.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
+.fade_layer.two {
+-webkit-animation-delay: 2s;
+-moz-animation-delay:2s;
+animation-delay: 2s;
+}
+ 
+.fade_layer.three {
+-webkit-animation-delay: 4s;
+-moz-animation-delay: 4s;
+animation-delay: 4s;
+}
+
+
+.fade_layer.four {
+-webkit-animation-delay: 7s;
+-moz-animation-delay: 7s;
+animation-delay: 7s;
+}
+
+.fade_layer.five {
+-webkit-animation-delay: 9s;
+-moz-animation-delay: 9s;
+animation-delay: 9s;
+}
