@@ -14,7 +14,7 @@ For the second rectangle of the X, I could have rotated it 135 degrees, but inst
 
 The shadow effect of the two lines of the X, creates an outline around them.  This made it clear that the X consisted of two shapes.  To create the illusion of a solid X I added a 3rd rectangle, without a shadow, and overlaid it on top.  This top line was made slightly wider, to avoid seeing slight parts of the shadow that hinted the solid structure was an illusion.  
 
-###Question Two: How We Positioned Them
+###Question Two: How we positioned them
 
 **Hannah**: The body of the document is set to fixed at 100% of the desktop screen (no mention for viewport size on this.)  Each box is positioned relative to the body, and each circle is positioned relative to the parent element (the box).  The X’s are positioned absolutely to the parent element(the box).
 
